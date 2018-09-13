@@ -1,0 +1,161 @@
+body {
+	background: #cccccc;
+}
+
+.stage {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: #DEB887;
+	position: relative;
+}
+
+/*#triangle {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 150px solid yellow;
+	position: absolute;
+	top: 203px;
+	left: 60px;
+	border-radius: 20px;
+}*/
+#camhead{
+	width: 80px;
+	height: 120px;
+	background: black;
+	border-radius: 35px;
+	position: absolute;
+	top: 265px;
+	right: 210px;
+}
+#cambody {
+	width: 300px;
+	height: 150px;
+	background: #838384;
+	top: 253px;
+	left: 350px;
+	position: absolute;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+#cambody2{
+	width: 230px;
+	height: 120px;
+	background: transparent;
+	border-color: #cfcfd1;
+	border-style: solid;
+    border-width: 3px 3px 3px 3px;
+	top: 270px;
+	left: 380px;
+	position: absolute;
+}
+
+#camback {
+	height: 0;
+	width: 80px;
+	border-bottom: 100px solid #3f3f3f;
+	border-left: 20px solid transparent;
+	border-right: 50px solid transparent;
+	top: 278px;
+	left: 228px;
+	position: absolute;
+	transform: rotate(-90deg);
+}
+#camtop{
+	width: 80px;
+	height: 50px;
+	-webkit-transform: skew(5deg);
+	   -moz-transform: skew(10deg);
+	     -o-transform: skew(10deg);
+	background: #3f3f3f;
+	top: 205px;
+	left: 450px;
+	position: absolute;
+}
+#handle{
+	width: 100px;
+	height: 20px;
+	background: #3f3f3f;
+	top: 320px;
+	left: 520px;
+	position: absolute;
+}
+#camnot {
+	width: 100px;
+	height: 100px;
+	background: black;
+	border-radius: 100px;
+	border-color:grey;
+	border-color: #cfcfd1;
+	border-style: solid;
+    border-width: 3px 0px 3px 3px;
+	top: 280px;
+	left: 480px;
+	position: absolute;
+}
+
+#fruit{
+	width: 150px;
+	height: 150px;
+	background: #e8e274;
+	border-radius: 100px;
+	top: 320px;
+	left: 120px;
+	position: absolute;
+
+}
+#fruit2{
+	width: 100px;
+	height: 100px;
+	background: #e8e274;
+	border-radius: 100px;
+	top: 280px;
+	left: 180px;
+	position: absolute;
+
+}
+
+/*#clip {
+	width: 150px;
+	height: 150px;
+	background: green;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	top: 203px;
+	left: 690px;
+	position: absolute;
+}*/
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
