@@ -1,0 +1,573 @@
+body{
+	background-color:black;
+	padding: 150px;
+}
+
+
+#specimenGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	justify-items:center;
+}
+
+
+
+.letter {
+	position: relative;
+	height:120px;
+	float:left;
+	justify-content:center;
+	margin: 20px;
+
+}
+.A,.B,.C,.D,.E,.F,.G,.H,
+.I,.J,.K,.L,.M,.N,.O,.P,
+.Q,.R,.S,.T,.U,.V,.W,.X,.Y,.Z{
+	width:80px;
+}
+
+.A1{
+	/*border-right: 20px;
+	border-color: red;*/
+	width:2px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    
+    left: 9px;
+    transform: rotate(15deg);
+}
+
+.A2{
+	
+	width:2px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+   
+    left: 63px;
+    transform: rotate(-15deg);
+}
+.Atop{
+	
+	width:30px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 22px;
+   
+}
+
+.Amid{
+	
+	width:2px;
+    height: 29px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    transform: rotate(90deg);
+    
+}
+
+
+.Asmall{
+	
+	width:2px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+        top: 93px;
+    left: 0;
+    transform: rotate(90deg);
+    
+}
+
+
+.Asmall2{
+	
+	width:2px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+        top: 93px;
+    left: 72px;
+    transform: rotate(90deg);
+    
+}
+
+
+.Bleft{
+	width:2px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+   
+
+
+}
+
+.Btop{
+	width:50px;
+    height: 40px;
+    background-color: transparent;
+    
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    position: absolute;
+    
+    left:20px;
+
+
+}
+.Bmid{
+	top: 21px;
+    left: 51px;
+    width: 2px;
+    height: 40px;
+}
+.Bslide{
+	width:2px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    top:50px;
+    left:60px;
+    transform: rotate(120deg);
+}
+
+.Bbottom{
+
+	width:50px;
+    height: 30px;
+    background-color: transparent;
+    
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    position: absolute;
+    top:68px;
+    left:20px;
+}
+.Ctop{
+	width:65px;
+    height: 10px;
+    background-color: transparent;
+    
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    position: absolute;
+    
+
+}
+.Cbottom{
+	width:65px;
+    height: 80px;
+    background-color: transparent;
+    
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    position: absolute;
+    top:20px;
+}
+.Cbottom2{
+	width:2px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    left:65px;
+    top:80px;
+    
+}
+
+.Dleft{
+	width:2px;
+    height: 105px;
+    background-color: white;
+    position: absolute;
+
+
+}
+.Dextra{
+	top:0px;
+	left:20px;
+}
+
+.Dright{
+	width:50px;
+    height: 100px;
+    background-color: transparent;
+    border-top:2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    position: absolute;
+    left:20px;
+   
+}
+.Dlittle{
+	width:2px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    
+}
+
+
+.Emiddle{
+	width:2px;
+    height: 29px;
+    background-color: white;
+    position: absolute;
+    top:35px;
+    left:20px;
+    transform: rotate(90deg);
+}
+.Ftop{
+	width:70px;
+    height: 10px;
+    background-color: transparent;
+    
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+	position: absolute;
+	
+
+}
+
+.Fmid{
+	width:2px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top:20px;
+    left:25px;
+
+}
+
+.Fmid2{
+
+	width:2px;
+    height: 29px;
+    background-color: white;
+    position: absolute;
+	left:40px;
+	top:35px;
+    transform: rotate(90deg);
+}
+.Gtail{
+	width:25px;
+    height: 28px;
+    background-color: transparent;
+    border-top:2px solid white;
+    border-right: 2px solid white;
+    position: absolute;
+    bottom: 18px;
+    left:52px;
+}
+.Hright{
+	
+    background-color: transparent;
+    border-top:2px solid white;
+    border-right: 2px solid white;
+    position: absolute;
+    
+	width:10px;
+    height: 105px;
+    
+    
+    left:60px;
+}
+.Hleft{
+	transform: rotate(180deg);
+    left:0px;
+    
+  
+}
+/*.Htop{
+	width:2px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(90deg);
+    top:-5px;
+    left:65px;
+}*/
+.Hmid{
+	top:55px;
+}
+/*.Hbottom{
+	width:2px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(90deg);
+    top:100px;
+    left:5px;
+    
+}*/
+
+.Imid{
+	width:2px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left:35px;
+}
+.Ibottom{
+	width:70px;
+    height: 10px;
+    background-color: transparent;
+    
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+	position: absolute;
+	transform: rotate(180deg);
+	top:90px;
+}
+
+.Jbottom{
+	width:30px;
+    height: 100px;
+    background-color: transparent;
+    
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+	position: absolute;
+	left:10px;
+}
+.Jbottom2{
+	width:2px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top:90px;
+    left:10px;
+    
+}
+
+.Ktop{
+	width:2px;
+    height: 85px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(45deg);
+    left:30px;
+    top:-10px;
+
+}
+.Kbottom{
+	width:2px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(-35deg);
+    top:50px;
+    left:45px;
+}
+
+.short{
+	width:65px;
+	left:10px;
+	top:95px;
+}
+.Mleft{
+	height:80px;
+	top:30px;
+	transform: rotate(180deg);
+	left:0px;
+}
+.Mmid1{
+	width:2px;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(-35deg);
+    left:20px;
+    
+}
+
+.Mmid2{
+	width:2px;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(35deg);
+    left:60px;
+    
+}
+.Mright{
+	left:70px;
+	border-bottom:2px solid white;
+    border-right: 2px solid white;
+    border-top:0px;
+    height:103px;
+    top:8px;
+}
+.Nmid{
+	height:120px;
+	left:35px;
+	
+	transform: rotate(-35deg);
+}
+.Nright{
+	left:60px;
+	top:3px;
+}
+
+.OO{
+	height:100px;
+	width:70px;
+	background-color: transparent;
+    
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+
+    position: absolute;
+    top:5px;
+   
+}
+
+.Obottom1{
+	top:101px;
+	left:5px;
+}
+.Obottom2{
+	top:101px;
+	left:68px
+}
+.Q1{
+	height:100px;
+	width:70px;
+	background-color: transparent;
+    
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+
+    position: absolute;
+}
+.Qright{
+	width:2px;
+    height: 80px;
+    position: absolute;
+    background-color: white;
+    left:70px;
+
+}
+.Qbottom{
+	width:50px;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    top:100px;
+}
+.Qtail{
+	height:30px;
+	top:78px;
+	left:60px;
+
+}
+.Rtail{
+	top:35px;
+	left:52px;
+	height:70px;
+}
+.Smid{
+	height:30px;
+	width:65px;
+	background-color: transparent;
+    
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+
+    position: absolute;
+    top:20px;
+}
+.Smid2{
+	width:2px;
+    height: 35px;
+    position: absolute;
+    background-color: white;
+    top:50px;
+    left:65px;
+}
+.Sbottom{
+	transform: rotate(180deg);
+	top:90px;
+}
+
+.U{
+	transform: rotate(180deg);
+}
+.W{
+	transform: rotate(180deg);
+	
+}
+.Wleft{
+	left:80px;
+	height:110px;
+}
+.Wright{
+	left:13px;
+	height:110px;
+}
+.Wsmall{
+	top:103px;
+	left:3px;
+}
+.Wsmall2{
+	top:103px;
+	left:90px;
+}
+
+.Wmid{
+	width: 2px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    left:56px;
+    transform: rotate(30deg);
+}
+.Wmid2{
+	width: 2px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(-30deg);
+    left:37px;
+}
+
+.nine{
+	transform: scaleX(-1)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
