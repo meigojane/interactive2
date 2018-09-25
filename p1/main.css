@@ -600,6 +600,9 @@ body{
 .oneleft{
 	left:15px;
 }
+.twobottom{
+	transform: scaleX(-1);
+}
 .four{
 	left:45px;
 }
@@ -627,7 +630,9 @@ body{
 .nine{
 	transform: scaleX(-1);
 }
-
+.zero{
+	transform: scaleY(-1);
+}
 
 
 
