@@ -6,7 +6,7 @@ body{
 
 #specimenGrid {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr ;
 	grid-template-rows: auto;
 	justify-items:center;
 }
@@ -23,7 +23,9 @@ body{
 }
 .A,.B,.C,.D,.E,.F,.G,.H,
 .I,.J,.K,.L,.M,.N,.O,.P,
-.Q,.R,.S,.T,.U,.V,.W,.X,.Y,.Z{
+.Q,.R,.S,.T,.U,.V,.W,.X,.Y,.Z,
+.one,.two,.three,.four,.five,.six,
+.seven,.eight,.nine,.zero{
 	width:80px;
 }
 
@@ -494,7 +496,7 @@ body{
 }
 .Sbottom{
 	transform: rotate(180deg);
-	top:90px;
+	top:88px;
 }
 
 .U{
@@ -538,26 +540,93 @@ body{
     left:37px;
 }
 
-.nine{
-	transform: scaleX(-1)
+
+.X{
+	left:10px;
+}
+.Xslide{
+	width: 2px;
+    height: 132px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(-35deg);
+    left:25px;
+    
+}
+
+.Xtop{
+	top:0px;
+	left:44px;
+	height:70px;
+	transform: rotate(35deg);
+
+}
+
+.Xsmall{
+	top:2px;
+	left: 59px;
+}
+
+.Xbottom{
+	top:75px;
+	left:0px;
+	height:50px;
+	transform:rotate(35deg);
+
+}
+
+.Y{
+	left:20px;
+}
+.Yleft{
+	width: 2px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(-35deg);
+    left:-15px;
+}
+
+.Ybottom{
+	height:60px;
+	top:72px;
+	left:8px;
+}
+
+.Z{
+	transform: rotate(-90deg) scale(1.6,.7);
+}
+
+.oneleft{
+	left:15px;
+}
+.four{
+	left:45px;
+}
+.fourtop{
+	transform: rotate(90deg);
+	top:30px;
+
+}
+.fourbottom{
+	left:65px;
+}
+.fivetop{
+	transform: scaleX(-1);
+
 }
 
 
+.six{
+	transform: scaleX(-1) rotate(180deg);
+}
+.seven{
+	transform: rotate(180deg);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.nine{
+	transform: scaleX(-1);
+}
 
 
 
