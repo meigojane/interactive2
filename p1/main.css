@@ -2,7 +2,14 @@ body{
 	background-color:black;
 	padding: 150px;
 }
+#title{
+    height:200px;
+    width:1000px;
+}
 
+a{
+    cursor: pointer;
+}
 
 #specimenGrid {
 	display: grid;
@@ -297,6 +304,7 @@ body{
 }*/
 .Hmid{
 	top:55px;
+    height:40px;
 }
 /*.Hbottom{
 	width:2px;
@@ -439,6 +447,9 @@ body{
 	top:101px;
 	left:68px
 }
+.Obottom3{
+    top:100px;
+}
 .Q1{
 	height:100px;
 	width:70px;
@@ -502,13 +513,17 @@ body{
 .U{
 	transform: rotate(180deg);
 }
+.V{
+    transform: rotate(180deg);
+}
 .W{
 	transform: rotate(180deg);
 	
 }
 .Wleft{
-	left:80px;
-	height:110px;
+    top:20px;
+	left:83px;
+	height:90px;
 }
 .Wright{
 	left:13px;
@@ -601,13 +616,14 @@ body{
 	left:15px;
 }
 .twobottom{
-	transform: scaleX(-1);
+	transform: translate(-5px,0) scaleX(-1);
 }
 .four{
 	left:45px;
 }
 .fourtop{
-	transform: rotate(90deg);
+	transform: translate(0,40px) rotate(90deg);
+    translate:(0,40px);
 	top:30px;
 
 }
@@ -615,7 +631,7 @@ body{
 	left:65px;
 }
 .fivetop{
-	transform: scaleX(-1);
+	transform: translate(-5px,0) scaleX(-1);
 
 }
 
@@ -624,7 +640,7 @@ body{
 	transform: scaleX(-1) rotate(180deg);
 }
 .seven{
-	transform: rotate(180deg);
+	transform: scaleX(-1);
 }
 
 .nine{
@@ -634,14 +650,46 @@ body{
 	transform: scaleY(-1);
 }
 
+.periodout{
+    height:20px;
+    width:20px;
+}
 
+.periodsmall1{
+    height:5px;
+    top:24px;
+    left:2px;
+}
+.periodsmall2{
+    height:5px;
+    top:24px;
+    left:20px;
+}
 
+.comma1{
+    top:20px;
+    left:22px;
+}
+.quoteleft{
+    transform: scaleX(-1);
+}
+.quoteleft2{
+    transform: scaleX(-1) translate(30px,0);
+}
+.quoteright{
+    transform: translate(35px,0);
+}
+.quoteright2{
+    transform: translate(65px,0);
+}
+.yaybottom{
+    transform: translate(23px,110px);
+}
 
-
-
-
-
-
+.qu{
+    height:35px;
+    transform: translate(-5px,0) rotate(-120deg);
+}
 
 
 
