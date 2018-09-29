@@ -9,7 +9,8 @@
 		stroke-miterlimit:10;
 		animation: offset 2s linear forwards;
 		stroke-dasharray: 200;
-    	stroke-dashoffset: 200;}
+    	stroke-dashoffset: 200;
+    	repeatCount="indefinite"}
 	
 	@keyframes offset {
     to {
