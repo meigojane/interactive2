@@ -82,11 +82,16 @@ function quote(){
 			console.log("quote");
 
 			var quote =document.getElementsByClassName("quote");
-			quote[0].style.transform="scale(1.5,1.5)";
+			quote[0].classList.add("button");
+
+			
+
 
 		});
 		
 }
+
+
 
 function yay(){
 	var yay = document.getElementsByClassName("yay");
@@ -130,9 +135,8 @@ function question(){
 
 
 
-
-	});
-
+});
+		
 }
 
 

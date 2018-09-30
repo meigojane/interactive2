@@ -57,6 +57,9 @@ body{
 .question{
     transform: scale(0.5,.5);
 }
+.button{
+    transform: scale(1.5,1.5)
+}
 
 .hidden{
     display:none;
