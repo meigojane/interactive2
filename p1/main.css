@@ -55,6 +55,7 @@ body{
 }
 .periodcomma,.comma,.quote,.yay,
 .question{
+    width:60%;
     transform: scale(0.5,.5);
 }
 .button{
