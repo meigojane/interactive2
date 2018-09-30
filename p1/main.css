@@ -28,8 +28,8 @@ body{
 #button{
     width:30%;
     display:inline-grid;
-    justify-items: center
-
+    justify-items: center;
+    transition: 1s;
 
 }
 
