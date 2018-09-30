@@ -9,7 +9,13 @@ body{
     width:1000px;
 }*/
 
-
+/*#logo{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top:50px;
+    left:50px;
+}*/
 
 #specimenGrid {
     width:65%;
@@ -26,6 +32,7 @@ body{
 
 
 }
+
 
 
 .letter {
@@ -55,8 +62,9 @@ body{
     display:none;
 }
 .show{
-    display:inline;
+    display: inline-grid;
 }
+.number{display:none}
 
 
 .A1{
@@ -660,17 +668,17 @@ body{
 
 
 .six{
-	transform: scaleX(-1) rotate(180deg);
+	transform: scaleX(-1) rotate(180deg) scale(0.7,.7) translate(0px,20px);
 }
 .seven{
-	transform: scaleX(-1);
+	transform: scaleX(-1) scale(0.7,.7);
 }
 
 .nine{
-	transform: scaleX(-1);
+	transform: scaleX(-1) scale(0.7,.7);
 }
 .zero{
-	transform: scaleY(-1);
+	transform: scaleY(-1) scale(0.7,.7) translate(0px,20px);
 }
 
 
@@ -690,7 +698,7 @@ body{
     left:20px;
 }
 .comma{
-    transform: translate(40px,0px);
+    transform: translate(60px,0px);
 }
 
 .comma1{

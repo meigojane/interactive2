@@ -13,8 +13,12 @@ function periodcomma(){
 	var periodcomma = document.getElementsByClassName("periodcomma");
 	periodcomma[0].addEventListener("click", function(){
 		console.log("periodcomma");
+	
 		var periodcomma =document.getElementsByClassName("periodcomma");
-		periodcomma[0].style.color="red";
+		periodcomma[0].style.transform="scale(1.5,1.5)";
+
+
+
 		var A =document.getElementsByClassName("A");
 		A[0].style.transform="translate(500px, 420px)";
 		var B =document.getElementsByClassName("B");
@@ -76,24 +80,71 @@ function quote(){
 	var quote = document.getElementsByClassName("quote");
 		quote[0].addEventListener("click", function(){
 			console.log("quote");
+
+			var quote =document.getElementsByClassName("quote");
+			quote[0].style.transform="scale(1.5,1.5)";
+
 		});
+		
 }
 
 function yay(){
 	var yay = document.getElementsByClassName("yay");
 	yay[0].addEventListener("click", function(){
 		console.log("yay");
+
+		var yay =document.getElementsByClassName("yay");
+		yay[0].style.transform="scale(1.5,1.5)";
+
+
 		var alphabet = document.getElementsByClassName("alphabet");
 		for(var i = 0; i < alphabet.length; i++){
 			alphabet[i].classList.add("hidden");
+
 		}
+		var number = document.getElementsByClassName("number");
+		for(var j = 0; j < number.length; j++){
+		if (number[j].style.display === "block") {
+        number[j].style.display = "none";
+    	} else {
+        number[j].style.display = "block";
+    	}
+
+		}
+			
 		
+
+		
+
 	});
 }
+
 
 function question(){
 	var question = document.getElementsByClassName("question");
 	question[0].addEventListener("click", function(){
 		console.log("question");
+
+		var question =document.getElementsByClassName("question");
+		question[0].style.transform="scale(1.5,1.5)";
+
+
+
+
 	});
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

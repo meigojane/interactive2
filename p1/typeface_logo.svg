@@ -7,10 +7,10 @@
 		stroke:#FFFFFF;
 		stroke-width:0.5;
 		stroke-miterlimit:10;
-		animation: offset 2s linear forwards;
+		animation: offset 2.5s linear infinite;
 		stroke-dasharray: 200;
     	stroke-dashoffset: 200;
-    	repeatCount="indefinite"}
+    	}
 	
 	@keyframes offset {
     to {
