@@ -81,7 +81,7 @@ function periodcomma(){
 	periodcomma[0].addEventListener("click", function(){
 		console.log("periodcomma");
 	
-		transformItem("periodcomma", "scale", "1.5,1.5");
+		/*transformItem("periodcomma", "scale", "1.5,1.5");*/
 
 		for(let i = 0; i < alphabetArray.length; i++){
 			let alphabet = alphabetArray[i];
@@ -108,7 +108,7 @@ function quote(){
 		quote[0].addEventListener("click", function(){
 			console.log("quote");
 
-			transformItem("quote", "scale", "1.5,1.5");
+			/*transformItem("quote", "scale", "1.5,1.5");*/
 		});
 		
 }
@@ -120,7 +120,7 @@ function yay(){
 	yay[0].addEventListener("click", function(){
 		console.log("yay");
 
-		transformItem("yay", "scale", "1.5,1.5");
+		/*transformItem("yay", "scale", "1.5,1.5");*/
 
 		var alphabets = document.getElementsByClassName("alphabet");
 		for(var i = 0; i < alphabets.length; i++){
@@ -153,7 +153,7 @@ function question(){
 	question[0].addEventListener("click", function(){
 		console.log("question");
 
-		transformItem("question", "scale", "1.5,1.5");
+		/*transformItem("question", "scale", "1.5,1.5");*/
 	});
 }
 
