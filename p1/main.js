@@ -85,7 +85,7 @@ function periodcomma(){
 	periodcomma[0].addEventListener("click", function(){
 		console.log("periodcomma");
 	
-		transformItem("periodcomma", "scale", "1.5,1.5");
+		/*transformItem("periodcomma", "scale", "1.5,1.5");*/
 
 		// var A =document.getElementsByClassName("A");
 		// A[0].style.transform="translate(500px, 420px)";
@@ -161,7 +161,7 @@ function quote(){
 		quote[0].addEventListener("click", function(){
 			console.log("quote");
 
-			transformItem("quote", "scale", "1.5,1.5");
+			/*transformItem("quote", "scale", "1.5,1.5");*/
 		});
 		
 }
@@ -173,7 +173,7 @@ function yay(){
 	yay[0].addEventListener("click", function(){
 		console.log("yay");
 
-		transformItem("yay", "scale", "1.5,1.5");
+		/*transformItem("yay", "scale", "1.5,1.5");*/
 
 		var alphabet = document.getElementsByClassName("alphabet");
 		for(var i = 0; i < alphabet.length; i++){
@@ -197,7 +197,7 @@ function question(){
 	question[0].addEventListener("click", function(){
 		console.log("question");
 
-		transformItem("question", "scale", "1.5,1.5");
+		/*transformItem("question", "scale", "1.5,1.5");*/
 	});
 
 
