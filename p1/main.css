@@ -68,8 +68,6 @@ body{
 .show{
     display: inline-grid;
 }
-.number{display:none}
-
 
 .A1{
 	/*border-right: 20px;
@@ -658,7 +656,6 @@ body{
 }
 .fourtop{
 	transform: translate(0,40px) rotate(90deg);
-    translate:(0,40px);
 	top:30px;
 
 }
