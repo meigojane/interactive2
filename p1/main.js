@@ -121,7 +121,7 @@ function yay(){
 		reset();
 		console.log("yay");
 
-		transformItem("yay", "scale", "1.5,1.5");
+		/*transformItem("yay", "scale", "1.5,1.5");*/
 
 		var alphabets = document.getElementsByClassName("alphabet");
 		for(var i = 0; i < alphabets.length; i++){
