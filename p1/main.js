@@ -79,8 +79,7 @@ function transformItem(alphabet, style, numbers){
 function periodcomma(){
 	var periodcomma = document.getElementsByClassName("periodcomma");
 	periodcomma[0].addEventListener("click", function(){
-		console.log("periodcomma");
-	
+		reset();
 		transformItem("periodcomma", "scale", "1.5,1.5");
 
 		for(let i = 0; i < alphabetArray.length; i++){
@@ -89,35 +88,37 @@ function periodcomma(){
 		}
 
 		var backButton = document.getElementById("specimenGrid");
-		function periodCommaBack(){
-			console.log("back");
-			transformItem("periodcomma", "scale");
-			for(let i = 0; i < alphabetArray.length; i++){
-				transformItem(alphabetArray[i], "translate");
-			}
-			backButton.removeEventListener("click", periodCommaBack);
-		}
 		backButton.addEventListener("click", periodCommaBack);
 
 	});
 }
 
+function periodCommaBack(){
+	var backButton = document.getElementById("specimenGrid");
+	transformItem("periodcomma", "scale");
+	for(let i = 0; i < alphabetArray.length; i++){
+		transformItem(alphabetArray[i], "translate");
+	}
+	backButton.removeEventListener("click", periodCommaBack);
+}
 
 function quote(){
 	var quote = document.getElementsByClassName("quote");
 		quote[0].addEventListener("click", function(){
+			reset();
 			console.log("quote");
-
 			transformItem("quote", "scale", "1.5,1.5");
 		});
-		
 }
 
-
+function quoteBack(){
+	transformItem("quote", "scale");
+}
 
 function yay(){
 	var yay = document.getElementsByClassName("yay");
 	yay[0].addEventListener("click", function(){
+		reset();
 		console.log("yay");
 
 		transformItem("yay", "scale", "1.5,1.5");
@@ -133,28 +134,44 @@ function yay(){
 		}
 
 		var backButton = document.getElementById("specimenGrid");
-		function yayBack(){
-			transformItem("yay", "scale");
-			for(let i = 0; i < alphabets.length; i++){
-				alphabets[i].classList.remove("hidden");
-			}
-			for(let i = 0; i < number.length; i++){
-				number[i].classList.add("hidden");
-			}
-			backButton.removeEventListener("click", yayBack);
-		}
 		backButton.addEventListener("click", yayBack);
 	});
+}
+
+function yayBack(){
+	var backButton = document.getElementById("specimenGrid");
+	var alphabets = document.getElementsByClassName("alphabet");
+	var number = document.getElementsByClassName("number");
+	transformItem("yay", "scale");
+	for(let i = 0; i < alphabets.length; i++){
+		alphabets[i].classList.remove("hidden");
+	}
+	for(let i = 0; i < number.length; i++){
+		number[i].classList.add("hidden");
+	}
+	backButton.removeEventListener("click", yayBack);
 }
 
 
 function question(){
 	var question = document.getElementsByClassName("question");
 	question[0].addEventListener("click", function(){
+		reset();
 		console.log("question");
-
 		transformItem("question", "scale", "1.5,1.5");
 	});
+}
+
+function questionBack(){
+	transformItem("question", "scale");
+}
+
+function reset(){
+	periodCommaBack();
+	quote();
+	yayBack();
+	questionBack();
+
 }
 
 
