@@ -4,6 +4,7 @@ body{
 	padding-top: 150px;
     padding-left:50px;
 }
+
 /*#title{
     height:200px;
     width:1000px;
@@ -25,11 +26,21 @@ body{
 	justify-items:center;
 }
 
+
 #button{
     width:30%;
     display:inline-grid;
     justify-items: center;
     transition: 1s;
+
+}
+.line{
+    height:120px;
+    position: relative;
+    float: left;
+}
+.word1{
+    position: relative;
 
 }
 
@@ -38,7 +49,6 @@ body{
 .letter {
 	position: relative;
 	height:120px;
-	float:left;
 	justify-content:center;
 	margin: 15px;
     
@@ -69,6 +79,32 @@ body{
 .hidden{
     display:none;
 }
+.N2{
+    top:-5px;
+    left:-10px;
+}
+.N3{
+    top:-5px; 
+    left:-60px;
+}
+.W2{
+    top:-10px;
+    left:-35px;
+}
+.E2{
+
+    left:-10px;
+}
+.E3{
+    left:-40px;
+}
+.E4{
+    left:-50px;
+}
+.T2{
+    left:-30px;
+}
+
 
 
 .A1{

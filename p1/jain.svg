@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 99"><defs>
+
+
+
+
+	<style>
+
+		.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;
+
+				animation: offset 2.5s linear infinite;
+				stroke-dasharray: 200;
+    			stroke-dashoffset: 200;
+		}
+		@keyframes offset {
+    	to {
+      stroke-dashoffset: 0;
+    	}
+  		}
+
+
+
+
+
+	</style>
+
+
+
+
+</defs><title>jain</title><g id="Layer_1" data-name="Layer 1"><polyline class="cls-1" points="54 67 51 67 60 35 69 35 78 67 75 67"/><line class="cls-1" x1="59.5" y1="55.5" x2="68.5" y2="55.5"/><polyline class="cls-1" points="24.5 34.5 45.5 34.5 45.5 37.5"/><polyline class="cls-1" points="28.5 63.5 28.5 67.5 38.5 67.5 38.5 34.5"/><polyline class="cls-1" points="84.5 39.5 84.5 35.5 107.5 35.5"/><line class="cls-1" x1="95.5" y1="67.5" x2="95.5" y2="35.5"/><polyline class="cls-1" points="84.5 67.5 107.5 67.5 107.5 64.5"/><polyline class="cls-1" points="118.5 67.5 114.5 67.5 114.5 41.5"/><polyline class="cls-1" points="114.5 34.5 138.5 67.5 138.5 32.5 135.5 32.5"/></g></svg>
