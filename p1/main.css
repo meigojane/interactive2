@@ -46,10 +46,41 @@ body{
     position: relative;
     float: left;
 }
-.word1{
+.words1{
     position: relative;
+    height:100px;
+    width: 100%
 
 }
+.test{
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes example {
+    0%   { left:0px; }
+    
+    50% { left:500px;}
+
+    100% { left:0px;}
+}
+.test2{
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes example2 {
+    0%   { left:200px; }
+    
+    50% { left:-200px;}
+
+    100% { left:200px;}
+}
+
 
 
 

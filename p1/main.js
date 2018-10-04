@@ -72,6 +72,9 @@ function transformItem(alphabet, style, numbers){
 		case "scale" :
 			var config = (numbers)? `scale(${numbers})` : "";
 			break;
+		case "rotate" :
+			var config = (numbers)? `rotate(${numbers}deg)` : "";
+			break;
 	}	
 	element[0].style.transform = config;
 }
@@ -110,6 +113,7 @@ function quote(){
 function quoteClick(){
 	var quote = document.getElementsByClassName("quote");
 	reset();
+	transformItem("quote", "scale", "1.5,1.5");
 	// quote[0].removeEventListener("click", quoteClick);
 	var grid = document.getElementById("specimenGrid");
 	grid.style.setProperty("display", "none");
@@ -131,6 +135,7 @@ function quoteClick(){
 
 function quoteBack(){
 	var quote = document.getElementsByClassName("quote");
+	transformItem("quote", "scale", "");
 	// quote[0].removeEventListener("click", quoteBack);
 	// quote[0].style.setProperty("width","");
 	// transformItem("quote", "translate");
@@ -184,11 +189,27 @@ function question(){
 		reset();
 		console.log("question");
 		transformItem("question", "scale", "1.5,1.5");
+		transformItem("question", "rotate", "20deg");
+		transformItem("A", "scale", "3,3");
+		transformItem("D", "scale", "3,3");
+		transformItem("G", "scale", "3,3");
+		transformItem("Q", "scale", "3,3");
+		transformItem("S", "scale", "3,3");
+		transformItem("N", "scale", "3,3");
+		transformItem("X", "scale", "3,3");
 	});
 }
 
 function questionBack(){
 	transformItem("question", "scale");
+	transformItem("question", "rotate");
+	transformItem("A", "scale", "");
+	transformItem("D", "scale", "");
+	transformItem("G", "scale", "");
+	transformItem("Q", "scale", "");
+	transformItem("S", "scale", "");
+	transformItem("N", "scale", "");
+	transformItem("X", "scale", "");
 }
 
 function reset(){
