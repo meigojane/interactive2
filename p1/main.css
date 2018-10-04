@@ -19,7 +19,7 @@ body{
 }*/
 
 #specimenGrid {
-    width:65%;
+    width:75%;
 	display: inline-grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr  ;
 	grid-template-rows: auto;
@@ -28,12 +28,19 @@ body{
 
 
 #button{
-    width:30%;
+    width:24%;
     display:inline-grid;
     justify-items: center;
-    transition: 1s;
-
 }
+
+.inBetween{
+    width: 75%;
+    vertical-align: middle;
+    padding: 5%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
 .line{
     height:120px;
     position: relative;
@@ -67,6 +74,7 @@ body{
 .question{
     width:45%;
     transform: scale(0.5,.5);
+    transition: 1s;
 }
 .periodcomma,.comma,.quote,.yay,
 .question:hover{
@@ -79,6 +87,11 @@ body{
 .hidden{
     display:none;
 }
+
+.opacityZero{
+    opacity: 0;
+}
+
 .N2{
     top:-5px;
     left:-10px;
@@ -764,6 +777,4 @@ body{
     height:35px;
     transform: translate(-5px,0) rotate(-120deg);
 }
-
-
 
