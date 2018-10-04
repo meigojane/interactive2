@@ -4,6 +4,7 @@ body{
 	padding-top: 150px;
     padding-left:50px;
 }
+
 /*#title{
     height:200px;
     width:1000px;
@@ -18,18 +19,35 @@ body{
 }*/
 
 #specimenGrid {
-    width:65%;
+    width:75%;
 	display: inline-grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr  ;
 	grid-template-rows: auto;
 	justify-items:center;
 }
 
+
 #button{
-    width:30%;
+    width:24%;
     display:inline-grid;
     justify-items: center;
-    transition: 1s;
+}
+
+.inBetween{
+    width: 75%;
+    vertical-align: middle;
+    padding: 5%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.line{
+    height:120px;
+    position: relative;
+    float: left;
+}
+.word1{
+    position: relative;
 
 }
 
@@ -38,7 +56,6 @@ body{
 .letter {
 	position: relative;
 	height:120px;
-	float:left;
 	justify-content:center;
 	margin: 15px;
     
@@ -57,6 +74,7 @@ body{
 .question{
     width:45%;
     transform: scale(0.5,.5);
+    transition: 1s;
 }
 .periodcomma,.comma,.quote,.yay,
 .question:hover{
@@ -69,6 +87,37 @@ body{
 .hidden{
     display:none;
 }
+
+.opacityZero{
+    opacity: 0;
+}
+
+.N2{
+    top:-5px;
+    left:-10px;
+}
+.N3{
+    top:-5px; 
+    left:-60px;
+}
+.W2{
+    top:-10px;
+    left:-35px;
+}
+.E2{
+
+    left:-10px;
+}
+.E3{
+    left:-40px;
+}
+.E4{
+    left:-50px;
+}
+.T2{
+    left:-30px;
+}
+
 
 
 .A1{
@@ -728,6 +777,4 @@ body{
     height:35px;
     transform: translate(-5px,0) rotate(-120deg);
 }
-
-
 
