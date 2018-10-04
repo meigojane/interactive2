@@ -104,15 +104,41 @@ function periodCommaBack(){
 
 function quote(){
 	var quote = document.getElementsByClassName("quote");
-		quote[0].addEventListener("click", function(){
-			reset();
-			console.log("quote");
-			transformItem("quote", "scale", "1.5,1.5");
-		});
+		quote[0].addEventListener("click", quoteClick);
+}
+
+function quoteClick(){
+	var quote = document.getElementsByClassName("quote");
+	reset();
+	// quote[0].removeEventListener("click", quoteClick);
+	var grid = document.getElementById("specimenGrid");
+	grid.style.setProperty("display", "none");
+	var inBetween = document.getElementsByClassName("inBetween");
+	inBetween[0].classList.remove("hidden");
+	// var quoteLeft = document.getElementsByClassName("quoteleft");
+	// var quoteLeft2 = document.getElementsByClassName("quoteleft2");
+	// quoteLeft[0].style.setProperty("transform", "translate(1085px,0)");
+	// quoteLeft2[0].style.setProperty("transform", "translate(1055px,0)")
+	// var quoteRight = document.getElementsByClassName("quoteright");
+	// var quoteRight2 = document.getElementsByClassName("quoteright2");
+	// quoteRight[0].style.setProperty("transform", "scaleX(-1) translate(470px,0)");
+	// quoteRight2[0].style.setProperty("transform", "scaleX(-1) translate(440px,0)");
+	// transformItem("quote", "translate", "-1200px,-100px");
+	// quote[0].style.setProperty("position", "absolute");
+	// quote[0].style.setProperty("left", "0");
+	inBetween[0].addEventListener("click", quoteBack);
 }
 
 function quoteBack(){
-	transformItem("quote", "scale");
+	var quote = document.getElementsByClassName("quote");
+	// quote[0].removeEventListener("click", quoteBack);
+	// quote[0].style.setProperty("width","");
+	// transformItem("quote", "translate");
+	var grid = document.getElementById("specimenGrid");
+	grid.style.setProperty("display", "");
+	var inBetween = document.getElementsByClassName("inBetween");
+	inBetween[0].classList.add("hidden");
+	quote[0].addEventListener("click", quoteClick);
 }
 
 function yay(){
@@ -170,7 +196,6 @@ function reset(){
 	quoteBack();
 	yayBack();
 	questionBack();
-
 }
 
 
