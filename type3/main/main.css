@@ -3,6 +3,7 @@ body{
 	font-family: gotham;
 	overflow:hidden;
 	background-color:#f7f3f2;
+	transition: 2s;
 
 }
 ul{
@@ -108,10 +109,11 @@ ul{
 
 }
 
+
 .kick{
 	 animation-name: kick;
-	 animation-timing-function: linear;
-	 animation-duration: 1s
+	 animation-timing-function: infinite;
+	 animation-duration: .2s;
 
 }
 @keyframes kick{
@@ -120,7 +122,7 @@ ul{
 
 }
 50% {
-	transform: rotate(10deg);
+	transform: rotate(3deg);
 }
 100%{
 	transform: rotate(0deg);
@@ -142,7 +144,11 @@ ul{
 	opacity: 0;
 }
 
-
+.circle7:hover .s{
+ position: absolute;
+ top:280px;
+ right:200px;
+}
 
 
 
