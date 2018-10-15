@@ -144,11 +144,19 @@ ul{
 	opacity: 0;
 }
 
+
+.show{
+	opacity: 1;
+}
+
+
+
 .circle7:hover .s{
  position: absolute;
  top:280px;
  right:200px;
 }
+
 
 
 
