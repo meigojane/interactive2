@@ -1,6 +1,6 @@
 body{
 	padding:50px;
-	font-family: brownstd;
+	font-family: gotham;
 	overflow:hidden;
 	background-color:#f7f3f2;
 
@@ -12,6 +12,7 @@ ul{
 	position: relative;
 	top:-30px;
 	left:-20px;
+	font-weight: normal;
 	
 
 }
@@ -30,19 +31,19 @@ ul{
 	text-align: center;
 	line-height: 70px;
 	margin-bottom: 15px;
-	font-weight: normal;
+	font-weight: bold;
 
 }
 .circle5,.circle6,.circle7,.circle8,.circle9{
-	width:130px;
-	height:130px;
+	width:132px;
+	height:132px;
 	border-radius:50%;
 	
-	font-size: 12pt;
+	font-size: 10pt;
 	text-align: center;
 	line-height: 60px;
 	margin-bottom: 15px;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 .circle1{
@@ -68,11 +69,13 @@ ul{
 .circle5{
 	background-color: #E9CB1C4D;
 	color:#e8b81f;
+	
 }
 .circle6{
 	background-color: #6CCBDA4D;
 	color:#6CCBDA;
 	line-height: 20px;
+
 }
 .social{
 	position: relative;
