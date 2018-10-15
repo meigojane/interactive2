@@ -107,7 +107,8 @@ ul{
 	left:3%;
 
 }
-.circle2:hover #left_front_leg{
+
+.kick{
 	 animation-name: kick;
 	 animation-timing-function: linear;
 	 animation-duration: 1s
@@ -126,20 +127,19 @@ ul{
 }
 }
 
-#left_front_leg{
+/* #left_front_leg{
 	transform: rotate();
-}
+} */
 
 #lil_ele{
 	width: 300px;
 	position: relative;
 	top:-250px;
 	left:442px;
-	opacity: 1;
-	
 }
-#circle1:hover #lil_ele{
-	opacity: 1;
+
+.hidden{
+	opacity: 0;
 }
 
 
