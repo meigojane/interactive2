@@ -1,0 +1,176 @@
+body{
+	padding:30px;
+	font-family: Paytone One;
+	overflow:hidden;
+	background-color:#f7f3f2;
+	transition: 2s;
+
+}
+ul{
+	list-style: none;
+	font-size:8pt;
+	line-height: 10pt;
+	position: relative;
+	top:-30px;
+	left:-20px;
+	font-family: gotham;
+	font-weight: normal;
+	
+
+}
+.title{
+	font-weight: bolder;
+	text-align: center;
+	top:-10px;
+}
+.left{
+	float:left;
+}
+.right{
+	float: right;
+}
+.bottom{
+	position: absolute;
+	bottom:20px;
+	left:45%;
+}
+.circle1,.circle2,.circle3,.circle4{
+	width:150px;
+	height:150px;
+	border-radius:50%;
+	
+	font-size: 12pt;
+	text-align: center;
+	line-height: 70px;
+	margin-bottom: 15px;
+	font-weight: bold;
+
+}
+.circle5,.circle6,.circle7,.circle8,.circle9{
+	width:132px;
+	height:132px;
+	border-radius:50%;
+	
+	font-size: 12pt;
+	text-align: center;
+	line-height: 60px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.circle1{
+	background : rgba(237, 25, 117, .3);
+	color:rgba(237, 25, 117);
+	margin-top:30px;
+}
+
+
+
+.circle2{
+	background : rgba(77, 183, 72, .3);
+	color: rgba(77, 183, 72);
+}
+.circle3{
+	background : rgba(109, 199, 179, .3);
+	color:rgb(91,192,169);
+}
+.circle4{
+	 background : rgba(248, 151, 29, .3);
+	 color: rgba(248, 151, 29);
+}
+.circle5{
+	background-color: #E9CB1C4D;
+	color:#e8b81f;
+	
+}
+.circle6{
+	background-color: #6CCBDA4D;
+	color:#6CCBDA;
+	line-height: 20px;
+
+}
+.social{
+	position: relative;
+	top:-10px;
+}
+.circle7{
+	background-color: #d3222f4D;
+	color:#d3222f;
+	line-height: 20px;
+}
+.mother{
+	position: relative;
+	top:-10px;
+}
+.circle8{
+	background-color: #984f9e4D;
+	color:#984f9e;
+}
+.circle9{
+	background-color: #0000004D;
+
+}
+#middle{
+
+}
+#elephant{
+	width: 950px;
+	position: relative;
+	left:3%;
+	top:30px;
+
+}
+
+
+.kick{
+	 animation-name: kick;
+	 animation-timing-function: infinite;
+	 animation-duration: .2s;
+
+}
+@keyframes kick{
+0%{
+	transform:rotate(0deg);
+
+
+}
+50% {
+	transform: rotate(3deg);
+	transform-origin: top;
+}
+100%{
+	transform: rotate(0deg);
+}
+}
+
+/* #left_front_leg{
+	transform: rotate();
+} */
+
+#lil_ele{
+	width: 300px;
+	position: relative;
+	top:-250px;
+	left:442px;
+}
+
+.hidden{
+	opacity: 0;
+}
+
+
+.show{
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
