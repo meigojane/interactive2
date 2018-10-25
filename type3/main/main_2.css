@@ -15,6 +15,7 @@ ul{
 	left:-20px;
 	font-family: gotham;
 	font-weight: normal;
+	color:black;
 	
 
 }
@@ -68,24 +69,24 @@ ul{
 
 .circle2{
 	background : rgba(77, 183, 72, .3);
-	color: rgba(77, 183, 72);
+	color: #2e9e38;
 }
 .circle3{
 	background : rgba(109, 199, 179, .3);
-	color:rgb(91,192,169);
+	color:#159e77;
 }
 .circle4{
 	 background : rgba(248, 151, 29, .3);
-	 color: rgba(248, 151, 29);
+	 color:#ef8c29;
 }
 .circle5{
 	background-color: #E9CB1C4D;
-	color:#e8b81f;
+	color:#dbb516;
 	
 }
 .circle6{
 	background-color: #6CCBDA4D;
-	color:#6CCBDA;
+	color:#1fabb2;
 	line-height: 20px;
 
 }
@@ -163,10 +164,38 @@ ul{
 	opacity: 1;
 }
 
+.text{
+	font-weight: normal;
+	font-family: gotham;
+	font-size:10pt;
+	letter-spacing: normal;
+    width:310px;
+    background-color: white;
+    color: black;
+    opacity: 0;
+
+    text-align: left;
+    border-radius: 6px;
+    padding: 15px;
+    position: absolute;
+    bottom: 20px;
+    right:-400px;
 
 
+}
 
+.back{color:#6b9299;
+position: absolute;
+	bottom:30px;
+	left:500px;}
 
+.explanation{
+	color:#6b9299;
+	position: absolute;
+	bottom:30px;
+	right:500px;
+	 text-decoration: underline; 
+}
 
 
 

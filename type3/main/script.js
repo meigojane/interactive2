@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
     circleEventListener("circle8", "ear", "waving", "hover");
     circleEventListener("circle3", "tail", "hidden", "hover");
     circleEventListener("circle3", "tail_2", "show", "hover");
+    circleEventListener("circle9", "elephant", "hidden", "hover");
+    circleEventListener("circle9", "death", "show", "hover");
     // circle2();
     // circle7();
 });
