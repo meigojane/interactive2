@@ -1,0 +1,90 @@
+* {
+	
+	background-color: white;
+	;
+
+}
+
+#grid {
+	margin-top:100px;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	height: 100vh;
+	width:100vh;
+	/*background-image: url("../img/Layer1.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center top;*/
+	background: transparent;
+	font-family: Impact;
+	font-size:100pt;
+  
+  color:black;
+}
+.clock,.clock1,.clock2,.clock3,.clock4 ,.clock5,.clock6,.clock7{
+  font-family: Impact;
+font-size:100pt;
+  
+  color:black;
+  background:transparent;
+  opacity:1;
+}
+
+
+.clock{
+	position: fixed;
+	top:-10%;
+	font-size: 200px;
+	z-index: 8;
+}
+
+.clock1,.clock4,.clock7{
+	position: fixed;
+	top:20%;
+}
+.clock4{
+	position:fixed;
+	left:-20%;
+}
+.clock2, .clock5{
+	position: fixed;
+	left:30%;
+}
+.clock3{
+	position: fixed;
+	right:30%;
+	top:50%;
+}
+.clock6{
+	position: fixed;
+	right:1%;
+	top:5%;
+}
+.clock1{z-index:1;
+	left:10%;
+
+}
+.clock2{
+	z-index:2;
+	font-size: 600px;
+}
+.clock3{
+	z-index:3;
+	font-size: 400px;
+}
+.clock4{
+	z-index:4;
+	font-size: 250px;
+}.clock5{
+	z-index:5;
+	position: fixed;
+	top:90%;
+	left:80%;
+	
+}.clock6{
+	z-index:6;
+	font-size:250px;
+}
+.clock7{
+	
+}
