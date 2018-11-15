@@ -50,11 +50,7 @@ font-size:100pt;
 	position: fixed;
 	left:30%;
 }
-.clock3{
-	position: fixed;
-	right:30%;
-	top:50%;
-}
+
 .clock6{
 	position: fixed;
 	right:1%;
@@ -71,6 +67,8 @@ font-size:100pt;
 .clock3{
 	z-index:3;
 	font-size: 400px;
+	position: fixed;
+	right:30%;
 }
 .clock4{
 	z-index:4;
