@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
+    <script src="script.js" defer></script>
+    <script src="jquery.min.js"></script>
+    <!-- import the webpage's javascript file -->
+    <!-- <script src="/script.js" defer></script> -->
+  </head>  
+  <body>
+ 
+    <div class="top">
+      <img class="home" src="assets/magritte.png">
+    </div>
+       <div class="button">
+    <div class="mid">
+      <a href="about.html">
+      <div class="hat draggable">
+         
+        <img src="assets/hat.png">
+      </div>
+    </a>
+    <a href="showcase.html">
+      <div class="frame draggable">
+      
+      <img src="assets/frame.png">
+      </div>
+    </a>
+      <div class="bird draggable">
+        <img src="assets/bird.png">  
+      </div>
+  </div>
+</div>
+<!-- <img class="wood" src="assets/wood_frame1.png"> -->
+<script src="https://code.jquery.com/jquery-1.12.4.js">
+</script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( ".draggable" ).draggable();
+        } );
+        $( function() {
+            $( ".resizable" ).resizable();
+        } );
+    </script>
+  </body>
+</html>
