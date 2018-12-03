@@ -1,7 +1,12 @@
+html{
+	overflow: hidden;
+}
+
 body{
 background:#96A7B2;
 margin: 0;
 }
+
 img{
 	height:220px;
 
@@ -13,6 +18,7 @@ height:200px;}
 	position: absolute;
 	top:unset;
 	left: unset;
+	z-index: 10;
 }
 .wood{
 	height:600px;
@@ -46,6 +52,32 @@ svg{
 	height:800px;
 
 }
+.sign{
+	position: absolute;
+	bottom: 5%;
+	right:5%;
+
+}
+input[type=text], select {
+	background-color: #7A8E9B;
+	border: 5px solid #7A8E9B;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:white;
+}
+input::placeholder {
+  color: white;
+}
+
+input[type=submit] {
+    
+    background-color: #A2BBCB;
+    border: 5px solid #A2BBCB;
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
 
 .easelmid{
 	transform: translate(0,-30px);
@@ -67,32 +99,50 @@ svg{
 .show{
 	display: block;
 }
+.fire,.bush,.glass{
+	cursor:pointer;
+}
+.bkg{
+	height:1370px;
+	position: absolute;
+	top:-330px;
+	left:-110px;	
+}
+.bkg1{
+	height:1450px;
+	position: absolute;
+	top:-330px;
+	left:-230px;	
+}
+.bkg2{
+	height:1340px;
+	position: absolute;
+	top:-150px;
+	
+}
 .fire{
 		height:620px;
-		z-index: 8;
 		position: absolute;
 		top:60px;
-		left:350px;
+		left:300px;
 
 	}
 	.bush{
-		height:620px;
-		z-index: 6;
+		height:715px;
 		position: absolute;
-		top:60px;
-		left:380px;
+		top:42px;
+		left:290px;
 
 	}
 	.glass{
 		height:620px;
-		z-index: 7;
 		position: absolute;
-		top:60px;
-		left:380px;
+		top:100px;
+		left:250px;
 
 	}
 	.easel1, .easel2, .easel3{
-		opacity: .6;
+		opacity: 1;
 	}
 	.easel1{
 		
@@ -115,10 +165,91 @@ svg{
 		height:400px;
 		position: absolute;
 		top:570px;
-		left:233px;
+		left:250px;
 
+	}
+.name2{
+      height:200px;
+      position: absolute;
+      top:42%;
+      left:33%;
+    }
+
+    /*p.name{
+      font-family: Georgia;
+      font-size:50px;
+      font-weight: bold;
+      color:white;
+      position: absolute;
+      top:45%;
+      left:36%;
+      }*/
+    p.about{
+      font-family: avenir;
+      font-size:15px;
+      font-weight: lighter;
+      width: 360px;
+      position: absolute;
+      color:white;
+      top:63%;
+      left:36%;}
+
+	h1{
+		font-family: 'Arizonia', cursive;
+		position: absolute;
+		bottom: 5%;
+		right:5%;
 	}
 
 
+@media screen and (max-width:480px) {
+	html{overflow: unset;}
+    .frame,.hat,.bird{
+			height:100px;
+			display: inline-block;
+			}
+	.bighat{
+		height:280px;
+		position: absolute;
+		left:0px;
+		top:50px;
+	}
+	.name2{
+      height: 150px;
+      position: absolute;
+      top:280px;
+      left: 40px;
+    }
+	p.about{
+		position: absolute;
+		left:80px;
+		top:400px;
+		width: 300px;
+	}
+	.bkg,.bkg1,.bkg2{
+		display: none;
+	}
+
+	.glass,.fire,.bush{
+		height: 300px;
+		position: absolute;
+		left:30px;
+		top:100px;
+	}
+
+
+}
+
+@media print{
+ 
+  @page {
+    size: landscape;
+  }
+  input{
+  	display: none;
+  }
+ 
+
+}
 
 

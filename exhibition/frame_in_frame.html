@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="script.js" defer></script>
     <script src="jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
 
 </head> 
 <style>
@@ -16,36 +17,63 @@
 		overflow:hidden;
 	}
 	.frame1{
-		height:620px;
+		height:480px;
+		position: absolute;
+		left:390px;
+		top:130px;
 	}
+	.outereasel{
+		position: relative;
+    	left: -52px;}
 	.scaleDown {
-	
-	transform:scale(0.8, 0.8)
-}
+	transform: scale(0.8, 0.8) translateY(120px);}
+	#outerEasel{
+		cursor: pointer;
+	}
+	.woodframe{
+		height:655px;
+		width:980px;
+		position: absolute;
+		left:280px;
+		top:42px;
+
+
+	}
 
 </style> 
 <body>
+	
 	<a href="index.html">
+
     <div class="top">
       <img class="home" src="assets/magritte.png">
     </div>
   </a>
 	<img class="easel1" src="assets/easel1.png">
   	<img class="easel3" src="assets/easel3.png">
+  	
+  	<div>
+	  	<img class="woodframe" src="assets/wood_frame1.png">
+	  	<div>
+	  	</div>
+  	</div>
 
 
-
-  	<div id="outerEasel" class="scaleDown">
+  	<div id="outerEasel">
 	<img class="frame1" src="assets/web_window.jpg">
 	<div class="scaleDown">
-		<img class="frame1" src="assets/web_window.jpg">
+		<!-- <img class="frame1" src="assets/web_window.jpg"> -->
 	</div>
 </div>
+	
 
   	
   	<img class="easel2" src="assets/easel2.png">
 
-	
+	<input class="sign" type="text" id="user-caption" placeholder="put your name!" />
+    <input class="sign" type="submit" onclick="doAPrint()" id="test-typing" value="sign" />
+
+
 </body>
 
 
