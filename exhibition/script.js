@@ -5,13 +5,18 @@ $(document).ready(function () {
 	$('.bush').click(function() {
 	    $('.bush').addClass('hide');
 	    $('.bkg').addClass('hide');
+	    $('.infoB').addClass('hide');
 	    $('.fire').removeClass('hide');
+	    $('.infoF').removeClass('hide');
 	});
 
 	$('.fire').click(function() {
 	    $('.fire').addClass('hide');
 	    $('.bkg1').addClass('hide');
+	    $('.infoF').addClass('hide');
 	    $('.glass').removeClass('hide');
+	    $('.infoG').removeClass('hide');
+
 	    
 	});
 
@@ -21,24 +26,51 @@ $(document).ready(function () {
 	    $('.bkg').removeClass('hide');
 	    $('.glass').addClass('hide');
 	    $('.bkg1').removeClass('hide');
+	    $('.infoB').removeClass('hide');
+	    $('.infoG').addClass('hide');
 
 	});
+
+
+	$('.fire').hover(function() {
+		$('.infoF').fadeTo(100,0.8)
+	},function(){
+		$('.infoF').fadeTo(100,0)
+
+	})
+	$('.bush').hover(function() {
+		$('.infoB').fadeTo(100,0.8)
+	},function(){
+		$('.infoB').fadeTo(100,0)
+
+	})
+	$('.glass').hover(function() {
+		$('.infoG').fadeTo(100,0.8)
+	},function(){
+		$('.infoG').fadeTo(100,0)
+
+	})
 
 });
 
 let easel = document.querySelector('#outerEasel')
 
-
-easel.addEventListener('click',click)
+if(easel) easel.addEventListener('click',click)
 
 let input = document.querySelector('#user-caption')
 
-
+let isFirstEasel = true
+let theImageURL = 'assets/screen_eye.jpg'
 
 function click(){
 	let newEasel = document.createElement('div')
 	newEasel.classList.add('scaleDown')
-	newEasel.innerHTML = '<img class="frame1" src="assets/web_window.jpg">'
+	newEasel.innerHTML = '<img class="frame1" src="'+theImageURL+'">'
+
+	if(isFirstEasel){
+		newEasel.classList.add('offset')
+	}
+	isFirstEasel = false
 
 	easel.appendChild(newEasel)
 
@@ -51,5 +83,38 @@ function doAPrint() {
 	name.innerText = input.value
 
 	document.body.appendChild(name)
-    window.print();
+    setTimeout(function(){
+    	window.print();
+    },1000)
 }
+
+
+
+
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drop(ev) {
+    ev.preventDefault();
+
+    var img = document.createElement('img');
+  
+    theImageURL = window.URL.createObjectURL(ev.dataTransfer.files[0]);
+
+    document.querySelector('.framebk1').src = theImageURL
+    document.querySelector('.frame1').src = theImageURL
+
+    // ev.target.appendChild(document.getElementById(data));
+}
+
+
+// function steps(){
+
+// 	alert(
+// 	 'Intruction/n1. Drag and drop a photo/n2.screenshot the entire screen/n3.Try clicking the frame/n4.Sign your name at the bottom/n5.Click sign! ');
+
+
+
+// }

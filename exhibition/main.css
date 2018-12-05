@@ -40,6 +40,8 @@ height:200px;}
 	display: inline-block;
 }
 
+
+
 .button{
 	position: absolute;
 	left:15%;
@@ -102,6 +104,8 @@ input[type=submit] {
 .fire,.bush,.glass{
 	cursor:pointer;
 }
+
+
 .bkg{
 	height:1370px;
 	position: absolute;
@@ -200,13 +204,53 @@ input[type=submit] {
 		bottom: 5%;
 		right:5%;
 	}
+	.infoB{
+		font-family: avenir;
+      font-size:15px;
+      background-color: white;
+      width: 210px;
+      padding: 15px;
+      position: relative;
+      opacity: 0;
+      top: 450px;
+      left:1175px;
 
 
-@media screen and (max-width:480px) {
+
+
+	}
+	.infoF,.infoG{font-family: avenir;
+      font-size:15px;
+      background-color: white;
+      width: 210px;
+      padding: 15px;
+      position: absolute;
+      opacity: 0;
+      top:510px;
+      left:1175px;
+
+  		}
+
+ .framebk {
+      height: 1150px;
+      position: absolute;
+      top:-230px;
+
+    }
+.framebk1 {
+      height: 1100px;
+      position: absolute;
+      top:-230px;
+
+    }
+
+
+
+@media only screen and (max-width:480px) {
 	html{overflow: unset;}
     .frame,.hat,.bird{
 			height:100px;
-			display: inline-block;
+			display: block;
 			}
 	.bighat{
 		height:280px;
@@ -236,6 +280,14 @@ input[type=submit] {
 		left:30px;
 		top:100px;
 	}
+	.infoB, .infoF, .infoG{
+		position: absolute;
+		left:15%;
+		top:65%;
+		width: 255px;
+		opacity: 0.8;
+
+	}
 
 
 }
@@ -243,7 +295,10 @@ input[type=submit] {
 @media print{
  
   @page {
+  	height:7.5in;
+  	margin:0;
     size: landscape;
+
   }
   input{
   	display: none;
