@@ -103,7 +103,7 @@ function drop(ev) {
   
     theImageURL = window.URL.createObjectURL(ev.dataTransfer.files[0]);
 
-    document.querySelector('.framebk1').src = theImageURL
+    document.querySelector('.framebk').src = theImageURL
     document.querySelector('.frame1').src = theImageURL
 
     // ev.target.appendChild(document.getElementById(data));
