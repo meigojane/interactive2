@@ -108,13 +108,3 @@ function drop(ev) {
 
     // ev.target.appendChild(document.getElementById(data));
 }
-
-
-// function steps(){
-
-// 	alert(
-// 	 'Intruction/n1. Drag and drop a photo/n2.screenshot the entire screen/n3.Try clicking the frame/n4.Sign your name at the bottom/n5.Click sign! ');
-
-
-
-// }
