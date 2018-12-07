@@ -298,7 +298,7 @@ input[type=submit] {
 
   	margin:0;
     size: landscape;
-
+    overflow:hidden;
   }
   input{
   	display: none;
