@@ -295,7 +295,7 @@ input[type=submit] {
 @media print{
  
   @page {
-  	height:7.5in;
+
   	margin:0;
     size: landscape;
 
@@ -303,7 +303,10 @@ input[type=submit] {
   input{
   	display: none;
   }
- 
+
+  body {
+    transform: scale(1.3,1.3);
+  }
 
 }
 
